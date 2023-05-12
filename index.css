@@ -157,6 +157,11 @@ label:hover{
     
     transform: translate(0px, -300px);
 }
+#contenedor{
+    display: flex;
+    justify-content: center;
+    font-family: 'Bungee', cursive;
+}
 .listText{
     font-family: 'Bungee', cursive;
     color: white;
