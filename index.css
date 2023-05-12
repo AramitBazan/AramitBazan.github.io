@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Armata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-image: url(Media/imagenes/Fondo.jpg);
+}
+
+header{
+    background-color: rgba(0, 0, 0, 0.768);
+    color: rgb(156, 81, 183);
+
+    font-family: 'Bungee', cursive;
+    
+    font-size: 50px;
+    height: 200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header h1{
+    background: #ccc;
+    background: linear-gradient(90deg, rgb(72, 0, 255), rgb(255, 255, 255));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+
+/*--------------------------------------------------- [COLUMNAS] ---------------------------------------------------*/
+.columnas{
+    background-color: rgba(0, 0, 0, 0.426);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+/*--------------------------------------------------- [GENEROS] ---------------------------------------------------*/
+.generosText{
+    background-color: rgba(0, 0, 0, 0.52);
+    margin: 20px;
+    padding: 10px;
+    width: 20%;
+
+}
+
+.generosText h1{
+    font-family: 'Bungee', cursive;
+    color: white;
+    font-size: 50px;
+    
+}
+label{
+    font-family: 'Armata', sans-serif;
+    color: white;
+    font-size: 30px;
+    width: 100px;
+    transform: translate(40%, -550%);
+}
+label:hover{
+    color: rgb(110, 250, 255);
+}
+/*--------------------------------------------------- [POPULARES] ---------------------------------------------------*/
+.populares{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 60%;
+}
+.container{
+    position: relative;
+    padding: 50px;
+}
+.container .slider{
+    display: flex;
+    background-color: rgb(128, 22, 22);
+    padding: 2px;
+    width: 900px;
+    height: 512px;
+    overflow: hidden;
+    
+}
+.container .slider img{
+    margin: 5px;
+}
+.container .slider img:hover{
+    box-shadow: 0 0 55px rgb(79, 223, 255), 0 0 55px rgb(79, 223, 255), 0 0 55px rgb(79, 223, 255), 0 0 55px rgb(79, 223, 255);
+}
+.container .control{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+    object-fit: cover;
+}
+.container .izq{
+    left: -5%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.container .der{
+    right: -5%;
+    top: 50%;
+    transform: translate(50%, -50%);
+}
+
+/*--------------------------------------------------- [OTROS] ---------------------------------------------------*/
+.otros{
+    background-color: rgba(0, 0, 0, 0.52);
+    margin: 20px;
+    width: 20%;
+}
+
+.otros h1{
+    height: 70px;
+
+    font-family: 'Bungee', cursive;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.otros p{
+    margin: 20px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Armata', sans-serif;
+    font-size: 30px;
+}
+.otros img{
+    width: 70%;
+    margin: 10%;
+}
+
+/*--------------------------------------------------- [LISTA DE JUEGOS] ---------------------------------------------------*/
+.generos{
+    background-color: rgba(0, 0, 0, 0.52);
+    display: flex;
+    justify-content: center;
+}
+#contenedor{
+    display: flex;
+    flex-direction: column;
+    
+    transform: translate(0px, -300px);
+}
+.listText{
+    font-family: 'Bungee', cursive;
+    color: white;
+    font-size: 50px;
+
+    display: flex;
+    justify-content: center;
+}
+
+input[type="radio"]{display: none;}
+
+#elementos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#elementos img{
+    height: 200px;
+    padding: 10px;
+}
+#elementos img:hover{
+    box-shadow: 0 0 55px rgb(79, 223, 255), 0 0 55px rgb(79, 223, 255), 0 0 55px rgb(79, 223, 255), 0 0 55px rgb(79, 223, 255);
+}
+#contenedor #accion:checked ~ #elementos .rol, 
+#contenedor #accion:checked ~ #elementos .aventura,
+#contenedor #accion:checked ~ #elementos .estrategia,
+#contenedor #accion:checked ~ #elementos .terror,
+#contenedor #accion:checked ~ #elementos .plataformas,
+#contenedor #accion:checked ~ #elementos .supervivencia
+{
+    display: none;
+}
+
+#contenedor #rol:checked ~ #elementos .accion,
+#contenedor #rol:checked ~ #elementos .aventura,
+#contenedor #rol:checked ~ #elementos .estrategia,
+#contenedor #rol:checked ~ #elementos .terror,
+#contenedor #rol:checked ~ #elementos .plataformas,
+#contenedor #rol:checked ~ #elementos .supervivencia
+{
+    display: none;
+}
+
+#contenedor #aventura:checked ~ #elementos .accion,
+#contenedor #aventura:checked ~ #elementos .rol,
+#contenedor #aventura:checked ~ #elementos .estrategia,
+#contenedor #aventura:checked ~ #elementos .terror,
+#contenedor #aventura:checked ~ #elementos .plataformas,
+#contenedor #aventura:checked ~ #elementos .supervivencia
+{
+    display: none;
+}
+
+#contenedor #estrategia:checked ~ #elementos .accion,
+#contenedor #estrategia:checked ~ #elementos .rol,
+#contenedor #estrategia:checked ~ #elementos .aventura,
+#contenedor #estrategia:checked ~ #elementos .terror,
+#contenedor #estrategia:checked ~ #elementos .plataformas,
+#contenedor #estrategia:checked ~ #elementos .supervivencia
+{
+    display: none;
+}
+
+#contenedor #terror:checked ~ #elementos .accion,
+#contenedor #terror:checked ~ #elementos .rol,
+#contenedor #terror:checked ~ #elementos .aventura,
+#contenedor #terror:checked ~ #elementos .estrategia,
+#contenedor #terror:checked ~ #elementos .plataformas,
+#contenedor #terror:checked ~ #elementos .supervivencia
+{
+    display: none;
+}
+
+#contenedor #plataformas:checked ~ #elementos .accion,
+#contenedor #plataformas:checked ~ #elementos .rol,
+#contenedor #plataformas:checked ~ #elementos .aventura,
+#contenedor #plataformas:checked ~ #elementos .estrategia,
+#contenedor #plataformas:checked ~ #elementos .terror,
+#contenedor #plataformas:checked ~ #elementos .supervivencia
+{
+    display: none;
+}
+
+#contenedor #supervivencia:checked ~ #elementos .accion,
+#contenedor #supervivencia:checked ~ #elementos .rol,
+#contenedor #supervivencia:checked ~ #elementos .aventura,
+#contenedor #supervivencia:checked ~ #elementos .estrategia,
+#contenedor #supervivencia:checked ~ #elementos .terror,
+#contenedor #supervivencia:checked ~ #elementos .plataformas
+{
+    display: none;
+}
