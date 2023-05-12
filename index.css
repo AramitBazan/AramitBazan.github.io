@@ -181,72 +181,72 @@ input[type="radio"]{display: none;}
 #elementos img:hover{
     box-shadow: 0 0 55px rgb(79, 223, 255), 0 0 55px rgb(79, 223, 255), 0 0 55px rgb(79, 223, 255), 0 0 55px rgb(79, 223, 255);
 }
-#contenedor #accion:checked ~ #elementos .rol, 
-#contenedor #accion:checked ~ #elementos .aventura,
-#contenedor #accion:checked ~ #elementos .estrategia,
-#contenedor #accion:checked ~ #elementos .terror,
-#contenedor #accion:checked ~ #elementos .plataformas,
-#contenedor #accion:checked ~ #elementos .supervivencia
+#contenedor #accion:checked ~ a #elementos .rol, 
+#contenedor #accion:checked ~ a #elementos .aventura,
+#contenedor #accion:checked ~ a #elementos .estrategia,
+#contenedor #accion:checked ~ a #elementos .terror,
+#contenedor #accion:checked ~ a #elementos .plataformas,
+#contenedor #accion:checked ~ a #elementos .supervivencia
 {
     display: none;
 }
 
-#contenedor #rol:checked ~ #elementos .accion,
-#contenedor #rol:checked ~ #elementos .aventura,
-#contenedor #rol:checked ~ #elementos .estrategia,
-#contenedor #rol:checked ~ #elementos .terror,
-#contenedor #rol:checked ~ #elementos .plataformas,
-#contenedor #rol:checked ~ #elementos .supervivencia
+#contenedor #rol:checked ~ a #elementos .accion,
+#contenedor #rol:checked ~ a #elementos .aventura,
+#contenedor #rol:checked ~ a #elementos .estrategia,
+#contenedor #rol:checked ~ a #elementos .terror,
+#contenedor #rol:checked ~ a #elementos .plataformas,
+#contenedor #rol:checked ~ a #elementos .supervivencia
 {
     display: none;
 }
 
-#contenedor #aventura:checked ~ #elementos .accion,
-#contenedor #aventura:checked ~ #elementos .rol,
-#contenedor #aventura:checked ~ #elementos .estrategia,
-#contenedor #aventura:checked ~ #elementos .terror,
-#contenedor #aventura:checked ~ #elementos .plataformas,
-#contenedor #aventura:checked ~ #elementos .supervivencia
+#contenedor #aventura:checked ~ a #elementos .accion,
+#contenedor #aventura:checked ~ a #elementos .rol,
+#contenedor #aventura:checked ~ a #elementos .estrategia,
+#contenedor #aventura:checked ~ a #elementos .terror,
+#contenedor #aventura:checked ~ a #elementos .plataformas,
+#contenedor #aventura:checked ~ a #elementos .supervivencia
 {
     display: none;
 }
 
-#contenedor #estrategia:checked ~ #elementos .accion,
-#contenedor #estrategia:checked ~ #elementos .rol,
-#contenedor #estrategia:checked ~ #elementos .aventura,
-#contenedor #estrategia:checked ~ #elementos .terror,
-#contenedor #estrategia:checked ~ #elementos .plataformas,
-#contenedor #estrategia:checked ~ #elementos .supervivencia
+#contenedor #estrategia:checked ~ a #elementos .accion,
+#contenedor #estrategia:checked ~ a #elementos .rol,
+#contenedor #estrategia:checked ~ a #elementos .aventura,
+#contenedor #estrategia:checked ~ a #elementos .terror,
+#contenedor #estrategia:checked ~ a #elementos .plataformas,
+#contenedor #estrategia:checked ~ a #elementos .supervivencia
 {
     display: none;
 }
 
-#contenedor #terror:checked ~ #elementos .accion,
-#contenedor #terror:checked ~ #elementos .rol,
-#contenedor #terror:checked ~ #elementos .aventura,
-#contenedor #terror:checked ~ #elementos .estrategia,
-#contenedor #terror:checked ~ #elementos .plataformas,
-#contenedor #terror:checked ~ #elementos .supervivencia
+#contenedor #terror:checked ~ a #elementos .accion,
+#contenedor #terror:checked ~ a #elementos .rol,
+#contenedor #terror:checked ~ a #elementos .aventura,
+#contenedor #terror:checked ~ a #elementos .estrategia,
+#contenedor #terror:checked ~ a #elementos .plataformas,
+#contenedor #terror:checked ~ a #elementos .supervivencia
 {
     display: none;
 }
 
-#contenedor #plataformas:checked ~ #elementos .accion,
-#contenedor #plataformas:checked ~ #elementos .rol,
-#contenedor #plataformas:checked ~ #elementos .aventura,
-#contenedor #plataformas:checked ~ #elementos .estrategia,
-#contenedor #plataformas:checked ~ #elementos .terror,
-#contenedor #plataformas:checked ~ #elementos .supervivencia
+#contenedor #plataformas:checked ~ a #elementos .accion,
+#contenedor #plataformas:checked ~ a #elementos .rol,
+#contenedor #plataformas:checked ~ a #elementos .aventura,
+#contenedor #plataformas:checked ~ a #elementos .estrategia,
+#contenedor #plataformas:checked ~ a #elementos .terror,
+#contenedor #plataformas:checked ~ a #elementos .supervivencia
 {
     display: none;
 }
 
-#contenedor #supervivencia:checked ~ #elementos .accion,
-#contenedor #supervivencia:checked ~ #elementos .rol,
-#contenedor #supervivencia:checked ~ #elementos .aventura,
-#contenedor #supervivencia:checked ~ #elementos .estrategia,
-#contenedor #supervivencia:checked ~ #elementos .terror,
-#contenedor #supervivencia:checked ~ #elementos .plataformas
+#contenedor #supervivencia:checked ~ a #elementos .accion,
+#contenedor #supervivencia:checked ~ a #elementos .rol,
+#contenedor #supervivencia:checked ~ a #elementos .aventura,
+#contenedor #supervivencia:checked ~ a #elementos .estrategia,
+#contenedor #supervivencia:checked ~ a #elementos .terror,
+#contenedor #supervivencia:checked ~ a #elementos .plataformas
 {
     display: none;
 }
