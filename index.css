@@ -157,7 +157,7 @@ label:hover{
     
     transform: translate(0px, -300px);
 }
-#contenedor{
+#contenedor h1{
     display: flex;
     justify-content: center;
     font-family: 'Bungee', cursive;
